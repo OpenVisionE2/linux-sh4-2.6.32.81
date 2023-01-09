@@ -98,10 +98,13 @@ config STE101P
           Say Y here to select the STE101P PHY
 endchoice
 
-
 config RTL8201 
 	depends on PHYLIB
         bool "Driver for Realtek RTL8201 PHY"
+
+config AC101L 
+	depends on PHYLIB
+        bool "Driver for Altima AC101L PHY"
 
 config LSI_ET1011C_PHY
 	tristate "Driver for LSI ET1011C PHY"
